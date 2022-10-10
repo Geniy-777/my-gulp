@@ -1,0 +1,9 @@
+.news{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    
+    @include ph {
+        display: block;
+    }
+}

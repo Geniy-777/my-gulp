@@ -1,0 +1,14 @@
+extends layout/app
+
+block page
+    div.content
+        include chunk/header
+
+        h1.title Главная
+
+        img(src="img/job-1.jpg", alt="Фейк", width="10")
+
+        ul.news 
+            each item in news 
+                li= item.name
+        include chunk/footer
